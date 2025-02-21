@@ -21,9 +21,8 @@ jobs:
           fetch-depth: '0'
         
       - name: build android
-        with:
-          path: ${{ github.workspace }}  
         run: |
           source build/envsetup.sh  
+          ./build/prebuild-download.sh  
           lunch 1  
           ./build-all.sh android

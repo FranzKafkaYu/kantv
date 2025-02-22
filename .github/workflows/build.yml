@@ -50,7 +50,7 @@ jobs:
         if: github.event_name == 'release'
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./Xray-${{ env.ASSET_NAME }}.zip*
-          tag: ${{ github.workspace }}/cdeosplayer/kantv/build/outputs/apk/all64/release/kantv-release-*-signed.apk
+          file: ${{ github.workspace }}/cdeosplayer/kantv/build/outputs/apk/all64/release/kantv-release-*-signed.apk
+          tag: ${{ github.ref }}
           file_glob: true
 

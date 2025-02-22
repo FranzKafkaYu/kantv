@@ -191,7 +191,7 @@ function sign_kantv_apk()
         echo "unsigned apk located in:${PROJECT_ROOT_PATH}/cdeosplayer/kantv/build/outputs/apk/all64/release" 
         exit 1
     else
-        echo -e "${TEXT_GREEN}succeed to sign apk: ${PROJECT_ROOT_PATH}/cdeosplayer/kantv/build/outputs/apk/all64/release/kantv-all64-release-signed.apk${TEXT_RESET}"  
+        echo -e "${TEXT_GREEN}succeed to sign apk: ${PROJECT_ROOT_PATH}/cdeosplayer/kantv/build/outputs/apk/all64/release/kantv-${PROJECT_BUILD_TYPE}-v${ANDROID_APK_VERSION}-signed.apk${TEXT_RESET}"  
     fi                
 }
 

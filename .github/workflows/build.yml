@@ -32,4 +32,4 @@ jobs:
         if: ${{  success() }}
         with:
           name: arm64-v8a 
-          path: ${{ github.workspace }}/cdeosplayer/kantv/build/outputs/apk/all64/release/kantv-release-*-signed.apk
+          path: ${{ github.workspace }}/cdeosplayer/kantv/build/outputs/apk/all64/release/*signed*.apk

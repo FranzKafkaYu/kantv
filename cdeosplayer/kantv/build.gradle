@@ -96,6 +96,12 @@ android {
         }
     }
 
+    //FranzKafka:2025-02-22, add version/compiletime in apk name
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "kantv-${variant.buildType.name}-v${project.ext.releaseVersion}-unsigned.apk"
+        }
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

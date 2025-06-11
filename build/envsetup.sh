@@ -77,7 +77,8 @@ export ANDROID_PLATFORM=android-34
 #export ANDROID_NDK=${KANTV_TOOLCHAIN_PATH}/android-ndk-r21e
 #export ANDROID_NDK=${KANTV_TOOLCHAIN_PATH}/android-ndk-r24
 #export ANDROID_NDK=${KANTV_TOOLCHAIN_PATH}/android-ndk-r25c
-export ANDROID_NDK=${KANTV_TOOLCHAIN_PATH}/android-ndk-r26c
+#export ANDROID_NDK=${KANTV_TOOLCHAIN_PATH}/android-ndk-r26c
+export ANDROID_NDK=${KANTV_TOOLCHAIN_PATH}/android-ndk-r28
 export ANDROID_NDK_ROOT=${ANDROID_NDK}  # make some open source project happy
 export NDK_ROOT=${ANDROID_NDK}          # make some open source project happy
 export PATH=${ANDROID_NDK_ROOT}:${PATH}
@@ -142,7 +143,7 @@ echo "--------------------------------------------------------------------------
 echo -e "[*] to continue to build project, pls run\n"
 echo -e "lunch\n"
 echo -e "[*] or\n"
-echo -e "./build-all.sh\n"
+echo -e "./build/build-all.sh\n"
 echo -e "[*] for default target android\n"
 echo "------------------------------------------------------------------------------------------"
 echo -e "\n"

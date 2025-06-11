@@ -12,6 +12,11 @@ android {
         flavorDimensions = ["versionCode"]
 
         externalNativeBuild {
+            if (project.hasProperty('GGML_HEXAGON')) {
+                arguments += "-DGGML_HEXAGON=ON"
+            } else {
+                arguments += "-DGGML_HEXAGON=OFF"
+            }
             cmake {
                 //modify to -DCMAKE_BUILD_TYPE=Release before prepare release apk
                 arguments += "-DCMAKE_BUILD_TYPE=Release"
